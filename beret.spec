@@ -27,6 +27,15 @@ cp /usr/include/SDL/* ./
 %install
 mkdir -p %{buildroot}%{_bindir}
 install -m 0755 %{name} %{buildroot}%{_bindir}
+#install data
+
+mkdir -p %{buildroot}%{_datadir}/%{name}/images
+install -m 0644 images/*.{png,bmp} %{buildroot}%{_datadir}/%{name}/images
+#install music
+mkdir -p %{buildroot}%{_datadir}/%{name}/music
+install -m 0644 music/*.ogg %{buildroot}%{_datadir}/%{name}/music
 
 %files
 %{_bindir}/%{name}
+%{_datadir}/%{name}/images/*
+%{_datadir}/%{name}/music/*
