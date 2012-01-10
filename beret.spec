@@ -40,6 +40,8 @@ install -m 0644 sfx/*.wav %{buildroot}%{_datadir}/%{name}/sfx
 #install rooms
 mkdir -p %{buildroot}%{_datadir}/%{name}/rooms
 install -m 0644 rooms/* %{buildroot}%{_datadir}/%{name}/rooms
+#font
+install -m 0644 AveriaSans-Regular.ttf  %{buildroot}%{_datadir}/%{name}/
 
 %files
 %{_bindir}/%{name}
@@ -47,3 +49,4 @@ install -m 0644 rooms/* %{buildroot}%{_datadir}/%{name}/rooms
 %{_datadir}/%{name}/music/*
 %{_datadir}/%{name}/sfx/*
 %{_datadir}/%{name}/rooms/*
+%{_datadir}/%{name}/AveriaSans-Regular.ttf
