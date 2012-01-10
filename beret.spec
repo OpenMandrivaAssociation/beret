@@ -1,6 +1,6 @@
 Name:		beret
 Version:	1.2.0
-Release:	1
+Release:	2
 Summary:	Beret is a 2D puzzle platformer
 Group:		Games/Arcade
 Url:		http://kiwisauce.com
@@ -34,8 +34,16 @@ install -m 0644 images/*.{png,bmp} %{buildroot}%{_datadir}/%{name}/images
 #install music
 mkdir -p %{buildroot}%{_datadir}/%{name}/music
 install -m 0644 music/*.ogg %{buildroot}%{_datadir}/%{name}/music
+#install sfx
+mkdir -p %{buildroot}%{_datadir}/%{name}/sfx
+install -m 0644 sfx/*.wav %{buildroot}%{_datadir}/%{name}/sfx
+#install rooms
+mkdir -p %{buildroot}%{_datadir}/%{name}/rooms
+install -m 0644 rooms/* %{buildroot}%{_datadir}/%{name}/rooms
 
 %files
 %{_bindir}/%{name}
 %{_datadir}/%{name}/images/*
 %{_datadir}/%{name}/music/*
+%{_datadir}/%{name}/sfx/*
+%{_datadir}/%{name}/rooms/*
