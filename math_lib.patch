@@ -1,0 +1,25 @@
+diff --git a/Makefile b/Makefile
+index 4993831..f8767d0 100755
+--- a/Makefile
++++ b/Makefile
+@@ -1,6 +1,6 @@
+ CC= gcc
+ CFLAGS= -Wall -g
+-LFLAGS= -lSDLmain -lSDL -lSDL_image -lSDL_ttf -lSDL_mixer
++LFLAGS= -lSDLmain -lSDL -lSDL_image -lSDL_ttf -lSDL_mixer -lm
+ 
+ default: beret
+ 
+diff --git a/game.c b/game.c
+index 22bd246..8cee5a6 100755
+--- a/game.c
++++ b/game.c
+@@ -95,7 +95,7 @@
+ #define RESOURCE_PATH ""
+ #else
+ #define SUPPORT_PATH ".beret/"
+-#define RESOURCE_PATH ""
++#define RESOURCE_PATH "/usr/share/beret/"
+ #endif
+ 
+ #define QUITMOD_WIN KMOD_ALT
