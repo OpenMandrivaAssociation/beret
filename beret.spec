@@ -50,3 +50,16 @@ install -m 0644 AveriaSans-Regular.ttf  %{buildroot}%{_datadir}/%{name}/
 %{_datadir}/%{name}/sfx/*
 %{_datadir}/%{name}/rooms/*
 %{_datadir}/%{name}/AveriaSans-Regular.ttf
+
+
+%changelog
+* Tue Jan 10 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.2.0-2
++ Revision: 759349
+- AveriaSans-Regular font needed for game
+- music sfx rooms added
+
+* Mon Jan 09 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.2.0-1
++ Revision: 759211
+- music and pictures added
+- imported package beret
+
