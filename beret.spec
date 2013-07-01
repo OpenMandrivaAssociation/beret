@@ -1,7 +1,7 @@
 Name:		beret
 Version:	1.2.0
 Release:	2
-Summary:	Beret is a 2D puzzle platformer
+Summary:	2D puzzle platformer
 Group:		Games/Arcade
 Url:		http://kiwisauce.com
 Source0:	%{name}.tar.bz2
