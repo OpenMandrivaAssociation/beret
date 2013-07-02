@@ -1,6 +1,6 @@
 Name:		beret
 Version:	1.2.0
-Release:	2
+Release:	3
 Summary:	2D puzzle platformer
 Group:		Games/Arcade
 Url:		http://kiwisauce.com
