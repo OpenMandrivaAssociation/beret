@@ -21,7 +21,7 @@ telekinetic scientist that is available for Windows, Mac OS X, and Linux.
 %patch0 -p1
 
 %build
-cp /usr/include/SDL/* ./
+#cp /usr/include/SDL/* ./
 %make
 
 %install
