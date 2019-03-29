@@ -1,15 +1,15 @@
 Name:		beret
 Version:	1.2.0
-Release:	4
+Release:	5
 Summary:	2D puzzle platformer
 Group:		Games/Arcade
 Url:		http://kiwisauce.com
 Source0:	%{name}.tar.bz2
 License:	GPLv2
-BuildRequires:	SDL-devel
-BuildRequires:	SDL_image-devel
-BuildRequires:	SDL_ttf-devel
-BuildRequires:	SDL_mixer-devel
+BuildRequires:	pkgconfig(sdl)
+BuildRequires:	pkgconfig(SDL_image)
+BuildRequires:	pkgconfig(SDL_ttf)
+BuildRequires:	pkgconfig(SDL_mixer)
 Patch0:		math_lib.patch
 
 %description
