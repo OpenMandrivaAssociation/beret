@@ -3,7 +3,7 @@ Version:	1.2.0
 Release:	5
 Summary:	2D puzzle platformer
 Group:		Games/Arcade
-Url:		http://kiwisauce.com
+Url:		https://kiwisauce.com
 Source0:	%{name}.tar.bz2
 License:	GPLv2
 BuildRequires:	pkgconfig(sdl)
