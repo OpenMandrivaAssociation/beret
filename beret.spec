@@ -6,6 +6,7 @@ Group:		Games/Arcade
 Url:		https://kiwisauce.com
 Source0:	%{name}.tar.bz2
 License:	GPLv2
+BuildRequires:	make
 BuildRequires:	pkgconfig(sdl)
 BuildRequires:	pkgconfig(SDL_image)
 BuildRequires:	pkgconfig(SDL_ttf)
